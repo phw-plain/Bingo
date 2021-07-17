@@ -4,8 +4,6 @@
 
 using namespace std;
 
-#define INWON 1 // 인원 수(일인용)
-
 bool b;
 
 class Bingo {
@@ -291,8 +289,8 @@ bool play_check(Bingo Gamer, Bingo Ai) {
 	if (Gamer.bingo == level || Ai.bingo == level) {
 		system("cls");
 		cout << "<<<  게임 결과  >>>" << endl;
-		cout << "Gamer : " << Gamer.bingo << endl;
-		cout << "Ai : " << Ai.bingo << endl;
+		cout << Gamer.name << " : " << Gamer.bingo << endl;
+		cout << Ai.name << " : " << Ai.bingo << endl;
 		if (Gamer.bingo == level) {
 			cout << endl << "▷ " << Gamer.name << "의 승리입니다!!" << endl << endl;
 		} else {
