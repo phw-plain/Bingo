@@ -290,13 +290,13 @@ bool play_check(Bingo Gamer, Bingo Ai) {
 
 	if (Gamer.bingo == level || Ai.bingo == level) {
 		system("cls");
-		cout << endl << "<<<  게임 결과  >>>" << endl;
+		cout << "<<<  게임 결과  >>>" << endl;
 		cout << "Gamer : " << Gamer.bingo << endl;
 		cout << "Ai : " << Ai.bingo << endl;
 		if (Gamer.bingo == level) {
-			cout << "▷ " << endl << Gamer.name << "의 승리입니다!!" << endl << endl;
+			cout << endl << "▷ " << Gamer.name << "의 승리입니다!!" << endl << endl;
 		} else {
-			cout << "▷ " << endl << Ai.name << "의 승리입니다!!" << endl << endl;
+			cout << endl << "▷ " << Ai.name << "의 승리입니다!!" << endl << endl;
 		}
 		return false;
 	} else {
